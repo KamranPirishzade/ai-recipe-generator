@@ -1,0 +1,114 @@
+
+
+.ai{
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.ai h2{
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ai p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.promptInput{
+  min-height: 50px;
+  max-height: 140px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  resize: vertical;
+  overflow-y: auto;
+  background-color: #fff;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+
+.promptInput::-webkit-scrollbar {
+    width: 10px;
+}
+.promptInput::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+.promptInput::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #686963;
+}
+
+.promptInput{
+    outline: none;
+    border-radius: 40px;
+    padding: 10px;
+    white-space: normal;
+}
+
+.promptInputDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.promptInputDiv button{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7a9f36;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.promptInputDiv button:hover{
+    background-color: #e64a19;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.loading {
+    font-size: 18px;
+    color: #888;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .outputDiv {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .outputDiv h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .outputDiv p {
+    font-size: 16px;
+    color: #555;
+  }

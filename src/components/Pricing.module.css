@@ -1,0 +1,95 @@
+.pricingContainer {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.pricingCard { /* Corrected class name */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #7a9f36;
+    padding: 20px 0;
+    border-radius: 15px;
+    color: white;
+    width: 22vw;
+    height: 400px;
+}
+
+.pricingCard ul { /* Corrected class name */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+}
+
+.pricingCard ul li { /* Corrected class name */
+    margin-bottom: 10px;
+}
+
+.pricingCard button { /* Corrected class name */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #333528;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.pricingCard button:hover { /* Corrected class name */
+    background-color: #e64a19;
+}
+
+.lined {
+    text-decoration: line-through;
+}
+
+.discounted {
+    color: green;
+    font-weight: bold;
+}
+
+
+.promoInput{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.promoInput input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 3px solid #7a9f36;
+    font-size: 16px;
+}
+
+.promoInput input:focus{
+    outline: none;
+}
+
+.promoInput button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(149, 222, 239);
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.promoInput button:hover{
+    background-color:rgb(100, 194, 215); ;
+}
+
+.promoInput p{
+    height: 10px;
+}

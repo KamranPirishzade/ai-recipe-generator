@@ -1,0 +1,170 @@
+.carouselContainer {
+    margin: 0 auto;
+    padding: 120px 20px;
+    position: relative;
+    /* border-radius: 40px;  */
+    overflow: hidden; 
+    background-color: #7a9f36;
+    /* z-index: -1; */
+  }
+  
+  .mainDiv {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+    transition: border-radius 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .mainPhoto {
+    width: 40%;
+  }
+  
+  .mainPhoto img {
+    width: 100%;
+    border-radius: 40px; 
+    transition: border-radius 0.3s ease-in-out; 
+  }
+  
+  .text {
+    width: 50%;
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+  
+  .text h1 {
+    font-size: 82px;
+    margin-bottom: 10px;
+  }
+  
+  .reactSimplyCarousel_forwardBtn,
+  .reactSimplyCarousel_backwardBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reactSimplyCarousel_forwardBtn {
+    right: 20px;
+  }
+  
+  .reactSimplyCarousel_backwardBtn {
+    left: 20px;
+  }
+  
+  .reactSimplyCarousel_forwardBtn:hover,
+  .reactSimplyCarousel_backwardBtn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .Main_carouselContainer__r34wC{
+    border-radius: 40px;
+  }
+
+
+  .aiSection{
+    background-color: white;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    gap: 5vw;
+    padding-right: 15vw;
+  }
+
+
+  .aiPhoto{
+    width:30vw;
+    border-radius: 40px;
+  }
+
+  .aiText{
+    margin-left: 15vw;
+    width:50vw;
+  }
+
+  .aiButton {
+    background-color: #7a9f36;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .aiButton:hover {
+    background-color: #e64a19;
+  }
+
+
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1vw 15vw;
+    background-color: #7a9f36;
+    gap: 40px;
+  }
+  
+  .catalogText {
+    max-width: 50%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 0 auto;
+    color: white;
+  }
+  .catalogText h2{
+    margin: 0;
+  }
+  
+  .catalogButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .catalogButton:hover {
+    background-color: #ff5733;
+  }
+  
+  .catalogImage img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .catalogImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,95 @@
+.aboutContainer {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+
+.hero{
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .missionVision {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    gap: 40px;
+  }
+  
+  .mission, .vision {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.2rem;
+  }
+  
+  .teamMembers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .member {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color:#333528 ;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .testimonials .testimonial {
+    margin: 20px 0;
+  }
+  
+  .cta {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .cta button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .cta button:hover {
+    background-color: #0056b3;
+  }

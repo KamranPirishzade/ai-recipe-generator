@@ -1,0 +1,63 @@
+
+.list{
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+.listItems{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.listItem{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7a9f36;
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.listItem:hover{
+    transform: translateY(-5px);
+}
+
+.listItem img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mealText{
+    padding: 10px;
+}
+
+
+
+
+
+
+.detailsButton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #e64a19;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .detailsButton:hover {
+    background-color:#333528 ;
+  }
