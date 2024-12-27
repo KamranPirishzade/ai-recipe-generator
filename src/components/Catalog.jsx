@@ -116,7 +116,7 @@ const Catalog = () => {
       <h1>Random Meal Catalog</h1>
       <div className={styles.searchDiv}>
         <input onChange={(e)=>setSearch(e.target.value)} value={search} type='text' placeholder='Looking for..'/>
-        <button onClick={showSearch}><img src='https://img.icons8.com/ios7/512/search.png' /></button>
+        <button onClick={showSearch}><img src='https://img.icons8.com/ios7/512/search.png' alt='search.png' /></button>
       </div>
       {!searched?(
       loading?(

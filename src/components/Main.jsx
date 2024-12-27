@@ -2,9 +2,11 @@ import React from 'react'
 import styles from "./Main.module.css"
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const navigate = useNavigate();
 
   return (
     <main>
@@ -55,7 +57,7 @@ function Main() {
         <p>Ready to explore custom recipes tailored just for you? Let our AI Recipe Maker turn your ingredients into culinary masterpieces.</p>
         <button
           className={styles.aiButton}
-          onClick={() => window.location.href = '/ai-recipe-maker'}
+          onClick={() => navigate('/ai-recipe-maker')}
         >
           Try AI Recipe Maker
         </button>
@@ -71,7 +73,7 @@ function Main() {
       <div className={styles.catalogText}>
           <h2>Explore Our Catalog</h2>
           <p>Discover a wide range of recipes to suit any taste and occasion. From appetizers to desserts, there's something for everyone!</p>
-            <button onClick={() => window.location.href = '/meals'} className={styles.catalogButton}>
+            <button onClick={() => navigate('/meals')} className={styles.catalogButton}>
               Go to Catalog
             </button>
         </div>
