@@ -4,6 +4,7 @@ import {FaFacebook} from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,9 +37,9 @@ export default function Footer() {
             <div  className={`${styles.footerObject} ${styles.footerObject3}`}>
                 <h3>Main Pages</h3>
                 <ul className={styles.pages}>  
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/meals'>Meals</a></li>
-                    <li><a href='/ai-recipe-maker'>AI recipe</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/meals">Meals</Link></li>
+                <li><Link to="/ai-recipe-maker">AI Recipe</Link></li>
                 </ul>
             </div>
             <div  className={styles.footerObject}>

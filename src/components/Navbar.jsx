@@ -19,6 +19,7 @@ export default function Navbar() {
           <li><Link to="/list">My List</Link></li>
           <li><Link to="/blogs">Blog</Link></li>
           <li><Link to="/pricing">Pricing</Link></li>
+          
         </ul>
     </nav>
     </div>  

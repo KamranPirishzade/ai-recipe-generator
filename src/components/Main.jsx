@@ -28,9 +28,6 @@ function Main() {
     speed={400}
     easing="linear" 
   >
-    
-
-
          <div className={styles.mainDiv}>
              <div className={styles.text}>
                  <h1>Cook.<br/> Create.<br/> Enjoy.</h1>

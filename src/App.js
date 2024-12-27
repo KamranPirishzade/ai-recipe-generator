@@ -12,6 +12,7 @@ import Pricing from './components/Pricing';
 import About from './components/About';
 import Footer from './components/Footer';
 import Blog from './components/Blog';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/pricing' element={<Pricing/>}/>
         <Route path='/about-us' element={<About/>}/>
         <Route path='/blogs' element={<Blog/>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </Router>
