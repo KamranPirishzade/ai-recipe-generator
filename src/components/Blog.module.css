@@ -99,7 +99,7 @@
     max-height: 240px;
 }
 
-.addButton,.loginButton{
+.addButton,.loginButton,.resetBtn{
     background: #007bff;
     color: white;
     padding: 10px 20px;
@@ -110,8 +110,19 @@
     transition: background-color 0.3s ease;
 }   
 
-.addButton:hover,.loginButton:hover{
+.addButton:hover,.loginButton:hover,.resetBtn:hover{
     background: #0056b3;
+}
+
+.resetBtn{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.reset{
+    width: 100%;
+    margin: 30px auto;
+    align-self: center;
 }
 
 

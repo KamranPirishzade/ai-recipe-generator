@@ -105,14 +105,15 @@
     
     .missionVision {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
       margin: 40px 0;
       gap: 10px;
     }
     
     .mission, .vision {
-      width: 50%;
+      width: 90%;
       padding: 8px;
+      text-align: center;
     }
     
     .team {

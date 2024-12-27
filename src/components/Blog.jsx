@@ -138,6 +138,7 @@ export default function Blog() {
           </div>
         </div>
       ) : (
+        <div>
         <div className={styles.addBlogForm}>
           <h3>Add a New Blog</h3>
           <form onSubmit={handleAddBlog}>
@@ -164,12 +165,13 @@ export default function Blog() {
               type="text"
               required
             />
-            <div className={styles.btns}>
             <button type='submit' className={styles.addButton}>Add Blog</button>
-            <button className={styles.addButton} onClick={resetStorage}>Reset Storage</button>
-            </div>
           </form>
         </div>
+          <div className={styles.reset}>
+                <button className={styles.resetBtn} onClick={resetStorage}>Reset Storage</button>
+          </div>
+          </div>
       )}
     </div>
   );
