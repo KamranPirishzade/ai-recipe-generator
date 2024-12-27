@@ -17,10 +17,10 @@ export default function Navbar() {
         </div>
         <ul>
           <li><Link to="/list">My List</Link></li>
-          <li><Link>Blog</Link></li>
-          <li><Link to="/pricing">Piricing</Link></li>
+          <li><Link to="/blogs">Blog</Link></li>
+          <li><Link to="/pricing">Pricing</Link></li>
         </ul>
-  </nav>
+    </nav>
     </div>  
   )
 }

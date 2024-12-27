@@ -1,6 +1,7 @@
 .pricingContainer {
     padding: 40px;
     text-align: center;
+    margin-top: 50px
 }
 
 .cards {
@@ -9,7 +10,7 @@
     justify-content: center;
 }
 
-.pricingCard { /* Corrected class name */
+.pricingCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,22 +20,23 @@
     padding: 20px 0;
     border-radius: 15px;
     color: white;
-    width: 22vw;
+    width: 26vw;
     height: 400px;
 }
 
-.pricingCard ul { /* Corrected class name */
+.pricingCard ul { 
     display: flex;
     flex-direction: column;
     list-style: none;
     justify-content: center;
+    padding: 0;
 }
 
-.pricingCard ul li { /* Corrected class name */
+.pricingCard ul li { 
     margin-bottom: 10px;
 }
 
-.pricingCard button { /* Corrected class name */
+.pricingCard button { 
     border-radius: 5px;
     padding: 10px;
     font-size: 14px;
@@ -44,7 +46,7 @@
     transition: background-color 0.3s ease;
 }
 
-.pricingCard button:hover { /* Corrected class name */
+.pricingCard button:hover { 
     background-color: #e64a19;
 }
 
@@ -92,4 +94,115 @@
 
 .promoInput p{
     height: 10px;
+}
+
+
+.pricingCard a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:600px) and (min-width:320px) {
+    .pricingContainer {
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px
+    }
+    .cards {
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .pricingCard {
+        justify-content: center;
+        gap: 5px;
+        padding: 10px 0;
+        width: 70vw;
+    }
+    
+    .pricingCard ul li {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .pricingCard button { 
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .discounted {
+        color: green;
+        font-weight: bold;
+    }
+    
+    
+    .promoInput{
+        padding: 8px;
+        margin-bottom: 5px;
+    }
+    
+    .promoInput input{
+        font-size: 12px;
+    }
+
+    
+    .promoInput button{
+        font-size: 12px;
+    }
+    
+}
+
+
+@media screen and (max-width:991px) and (min-width:600px) {
+    .pricingContainer {
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px
+    }
+    .cards {
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .pricingCard {
+        justify-content: center;
+        gap: 5px;
+        padding: 15px 10px;
+        width: 44vw;
+    }
+    
+    .pricingCard ul li {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    
+    .pricingCard button { 
+        padding: 10px;
+        font-size: 17px;
+    }
+    
+    .discounted {
+        color: green;
+        font-weight: bold;
+    }
+    
+    
+    .promoInput{
+        padding: 8px;
+        margin-bottom: 5px;
+    }
+    
+    .promoInput input{
+        font-size: 12px;
+    }
+
+    
+    .promoInput button{
+        font-size: 12px;
+    }
+    
 }

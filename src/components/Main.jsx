@@ -7,6 +7,7 @@ function Main() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   return (
+    <main>
     <div>
       <div className={styles.carouselContainer}>
   <ReactSimplyCarousel
@@ -39,8 +40,8 @@ function Main() {
          </div>
          <div className={styles.mainDiv}>
             <div className={styles.text}>
-                <h1>Cook.<br/> Create.<br/> Enjoy.</h1>
-                <p>Unleash your inner chef with personalized recipes, powered by AI. From quick meals to gourmet dishes, we turn your ingredients into magic.</p>
+            <h1>Discover.<br/> Savor.<br/> Share.</h1>
+            <p>Embark on a culinary journey with recipes tailored to your taste. Whether you're hosting a dinner or craving comfort food, we've got you covered.</p>
             </div>
             <div className={styles.mainPhoto}>
             <img  src='https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='main.png'/>
@@ -59,9 +60,8 @@ function Main() {
           Try AI Recipe Maker
         </button>
         </div>
-        <div >
           <img className={styles.aiPhoto} src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ai_recipe.png" />
-        </div>
+
 
       </div>
       <div className={styles.catalog}>
@@ -77,7 +77,8 @@ function Main() {
         </div>
       </div>
     </div>
-  );
+    </main>
+  )
 }
 
 export default Main;

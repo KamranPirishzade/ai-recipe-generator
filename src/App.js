@@ -10,6 +10,9 @@ import Ai from './components/Ai';
 import List from './components/List';
 import Pricing from './components/Pricing';
 import About from './components/About';
+import Footer from './components/Footer';
+import Blog from './components/Blog';
+
 
 function App() {
   return (
@@ -24,7 +27,9 @@ function App() {
         <Route path='/list' element={<List/>}/>
         <Route path='/pricing' element={<Pricing/>}/>
         <Route path='/about-us' element={<About/>}/>
+        <Route path='/blogs' element={<Blog/>}/>
       </Routes>
+      <Footer/>
     </Router>
   </div>
   );

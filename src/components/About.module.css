@@ -78,18 +78,73 @@
   .cta {
     text-align: center;
     margin: 50px 0;
+    width: 40vw;
+    margin: 0 auto;
   }
   
-  .cta button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+  
+  @media screen and (max-width:600px) and (min-width:320px) {
+    .aboutContainer {
+      line-height: 1.4;
+      padding: 20px;
+    }
+  
+  .hero{
+      padding: 40px 20px;
   }
   
-  .cta button:hover {
-    background-color: #0056b3;
-  }
+  .hero h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    
+    .missionVision {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+      gap: 10px;
+    }
+    
+    .mission, .vision {
+      width: 50%;
+      padding: 8px;
+    }
+    
+    .team {
+      margin: 50px 0;
+      font-size: 1rem;
+    }
+    
+    .teamMembers {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .member {
+      text-align: center;
+      max-width: 200px;
+    }
+    
+    .member img {
+      width: 100%;
+    }
+    
+    .testimonials {
+      padding: 20px 15px;
+      font-size: 1.2rem;
+    }
+    
+    .cta {
+      text-align: center;
+      margin: 50px 0;
+      width: 80vw;
+      margin: 40px auto;
+    }
+    
+  }  

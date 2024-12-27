@@ -23,15 +23,13 @@
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
-    /* background-color: #7a9f36; */
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 0.9rem;
     transition: background-color 0.3s ease;
-    /* background-color:rgb(53, 53, 209); */
     background-color:red;
     font-size: 16px;
+    width: 110px;
   }
   
   .detailsButton:hover {
@@ -64,4 +62,79 @@
 .instructions::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #333528;
+}
+
+
+@media screen and (max-width:600px) and (min-width:320px) {
+    .meal{
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 20px;
+      align-items: center;
+      justify-content:space-between ;
+      font-size: 1rem;
+    }
+
+    .meal h1{
+      font-size: 24px;
+    }
+
+    .meal img{
+      width: 100%;
+      border-radius:8px
+    }
+
+
+    .detailsButton {
+      padding: 8px 15px;
+      font-size: 14px;
+      width: 100px;
+    }
+
+    .instructions{
+      max-height: 300px;
+      overflow-y: auto;
+      line-height: 1.4;
+    }
+
+    .instructions::-webkit-scrollbar {
+      width: 5px;
+    }
+}
+
+
+@media screen and (max-width:991px) and (min-width:601px) {
+  .meal{
+    display: flex;
+    /* flex-direction: column; */
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content:space-between ;
+    font-size: 1.1rem;
+  }
+
+  .meal img{
+    width: 40%;
+    border-radius:100%;
+  }
+
+
+  .detailsButton {
+    padding: 8px 15px;
+    font-size: 15px;
+    width: 110px;
+  }
+
+  .instructions{
+    max-height: 200px;
+    overflow-y: auto;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .instructions::-webkit-scrollbar {
+    width: 6px;
+  }
 }

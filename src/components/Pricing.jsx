@@ -7,10 +7,15 @@ export default function Pricing() {
   const [res,setRess]=useState("")
 
 
+  const links={
+    discountMed:"https://buy.stripe.com/test_00g8xmaW86qTgN25km",
+    discountPre:"https://buy.stripe.com/test_8wMeVK5BO02vcwMeUX"
+  }
+
+
   const promoCodes = {
     cook30: 30, 
     recipe30: 30,
-    firsttime20: 20, 
   };
 
   const useCode = () => {
@@ -53,7 +58,7 @@ export default function Pricing() {
             <li>Feature 2: Basic Support</li>
             <li>Feature 3: 100 API Calls</li>
           </ul>
-          <button>Get Started</button>
+          <button><a href='/'>Get Started</a></button>
         </div>
 
         <div className={styles.pricingCard}>
@@ -75,7 +80,7 @@ export default function Pricing() {
             <li>Feature 3: Recipe Modifications</li>
             <li>Feature 4: No Ads</li>
           </ul>
-          <button>Subscribe Now</button>
+          <button><a href={discount?links.discountMed:'https://buy.stripe.com/test_fZe9Bq7JWeXpdAQcMN'} target="_blank"  rel="noreferrer">Subscribe Now</a></button>
         </div>
 
         <div className={styles.pricingCard}>
@@ -97,7 +102,7 @@ export default function Pricing() {
             <li>Feature 4: Image Generator (Beta)</li>
             <li>Feature 5: Early Feature Access</li>
           </ul>
-          <button>Subscribe Now</button>
+          <button><a href={discount?links.discountPre:'https://buy.stripe.com/test_8wMcNCe8k4iLfIY9AA'} target="_blank"  rel="noreferrer">Subscribe Now</a></button>
         </div>
       </div>
     </div>

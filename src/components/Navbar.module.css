@@ -1,53 +1,177 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    margin: 0;
-    font-family: "Raleway", serif;
-  }
-  nav {
-    display: flex;
-    /* justify-content:space-; */
-    align-items: center;
-    background-color: #333528;
-    color: white;
-    padding: 10px 20px;
-    height: 20vh;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    z-index: 1;
+  margin: 0;
+  /* font-family: "Raleway", serif; */
+}
 
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #333528;
+  color: white;
+  padding: 10px 20px;
+  height: 20vh;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  top: 20px;
+}
+
+.logoImg {
+  height: 260px;
+  width: 220px;
+  margin: 40px 10px 0;
+  pointer-events: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 35vw;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none; 
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffa500;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  nav {
+    padding: 10px;
+    gap: 10px;
+    height: 15vh;
   }
-  .logoImg{
-    height: 240px;
-    width: 195px;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 60px;
-    pointer-events: none;
+  .logo{
+    position: relative;
+    top: 20px;
   }
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  .logoImg {
+    height: 140px;
+    width: 110px;
+    margin: 10px auto;
   }
-  ul li {
-    margin: 0 40px;
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  } 
+
+  nav ul li {
+    margin: 2px 0;
   }
-  ul li a {
-    text-decoration: none; 
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
+
+  nav ul li a {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  nav {
+    padding: 15px 20px;
+    gap: 20px;
+  }
+
+  .logoImg {
+    height: 160px;
+    width: 130px;
+    margin: 20px auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  nav {
+    padding: 20px 40px;
+    gap: 40px;
+  }
+
+  .logoImg {
+    height: 220px;
+    width: 180px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
     letter-spacing: 3px;
   }
-  ul li a:hover {
-    color: #ffa500;
+}
+
+
+@media only screen and (min-width: 1441px) and (max-width: 2000px) {
+  nav {
+    padding: 20px 50px;
+    gap: 50px;
   }
 
-  
+  .logoImg {
+    height: 260px;
+    width: 210px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  nav ul li {
+    margin: 0 25px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+}

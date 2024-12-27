@@ -1,0 +1,213 @@
+.footer{
+    padding: 20px 50px;
+    background-color: #333528;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContainer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.footerContainer ul li{
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footerObject{
+    width: 21vw;
+    padding: 20px;
+    /* letter-spacing: 0.2cap; */
+    /* line-height: 1.3; */
+
+}
+
+.icons{
+    display: flex;
+    gap: 25px;
+}
+
+.icons a{
+    background-color: white;
+    padding: 2px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.icons a:hover{
+    background-color: rgb(122, 159, 54);
+    color: white;
+}
+
+.submitForm{
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitForm input{
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+
+    width: 100%;
+}
+
+.submitForm input:focus{
+    outline: none;
+}
+
+.submitForm button{
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background-color: transparent;
+    color: rgb(92, 161, 201);
+    transition: color 0.2s ease;
+}
+
+.submitForm button:hover{
+    color: #333528;
+}
+
+.pages a{
+    color: white;
+    transition: color 0.3s ease;
+}
+.pages a:hover{
+    color: rgb(122, 159, 54); ;
+}
+
+.copyright{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.logoName{
+    font-family: "Playwrite IT Moderna", serif;     
+}
+
+
+
+@media screen and (max-width: 600px) and (min-width:320px) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    .footerContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerObject {
+        width: 100%;
+        text-align: center;
+        padding:10px 0;
+    }
+    .icons{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .submitForm input {
+        font-size: 14px;
+    }
+
+    .copyright {
+        margin-right: 0;
+        text-align: center;
+    }
+    .footerObject2{
+        width: 40%;
+    }
+    .footerObject3{
+        width: 40%;
+    }
+}
+
+/* Medium devices (601px to 991px) */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .footer {
+        font-size: 1rem;
+        padding: 20px 40px;
+    }
+
+    .footerContainer{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footerObject{
+        width: 40%;
+        text-align: left;
+    }
+
+    .icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .submitForm input {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    .footer {
+        font-size: 1rem;
+    }
+
+    .footerObject {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .footer {
+        font-size: 1.1rem;
+        padding: 30px 60px;
+    }
+
+    .footerObject {
+        width: 21vw;
+    }
+
+    .icons a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .submitForm input {
+        font-size: 20px;
+    }
+}

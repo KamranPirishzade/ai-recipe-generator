@@ -2,10 +2,8 @@
     margin: 0 auto;
     padding: 120px 20px;
     position: relative;
-    /* border-radius: 40px;  */
     overflow: hidden; 
     background-color: #7a9f36;
-    /* z-index: -1; */
   }
   
   .mainDiv {
@@ -160,11 +158,184 @@
   }
   
   .catalogImage img {
-    max-width: 100%;
     border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
   }
   .catalogImage{
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+
+  
+  @media screen and (max-width: 600px) and (min-width: 320px) {
+    .carouselContainer{
+      padding-top: 50px;
+    }
+    .mainDiv {
+      flex-direction: column;
+      width: 90vw;
+      margin: 50px auto;
+      border-radius: 20px;
+    }
+  
+    .mainPhoto {
+      width: 100%;
+    }
+  
+    .mainPhoto img {
+      border-radius: 20px;
+      height: 200px;
+      object-fit: cover;
+
+    }
+  
+    .text {
+      width: 100%;
+      padding-left: 10px;
+    }
+  
+    .text h1 {
+      font-size: 36px;
+    }
+  
+    .aiSection {
+      flex-direction: column;
+      padding: 10vw 5vw;
+      gap: 20px;
+    }
+  
+    .aiPhoto {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .aiText {
+      margin-left: 0;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .aiButton{
+      font-size: 14px;
+    }
+  
+    .catalog {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .catalogText {
+      max-width: 100%;
+      padding: 20px 0;
+      font-size: 24px;
+    }
+  
+    .catalogImage img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .reactSimplyCarousel_forwardBtn,
+    .reactSimplyCarousel_backwardBtn {
+    width: 30px;
+    height: 30px;
+  }
+  .reactSimplyCarousel_forwardBtn {
+    right: 10px;
+  }
+  
+  .reactSimplyCarousel_backwardBtn {
+    left: 10px;
+  }
+  }
+  
+  @media screen and (max-width: 991px) and (min-width: 601px) {
+    .mainDiv {
+      width: 85vw;
+      border-radius: 30px;
+    }
+  
+    .text h1 {
+      font-size: 48px;
+    }
+  
+    .aiSection {
+      width: 85vw;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .aiPhoto {
+      width: 240px;
+      padding: 10px 0;
+
+    }
+  
+    .aiText {
+      width: 100%;
+      margin-left: 20px;
+      font-size: 23px;
+    }
+  
+    .catalog {
+      gap: 30px;
+      padding: 3vw 7vw;
+    }
+  
+    .catalogText {
+      font-size: 22px;
+    }
+    .catalogImage img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
+
+  @media screen and (max-width: 1441px) and (min-width: 2000px){
+    .mainDiv {
+      width: 90vw;
+      border-radius: 30px;
+    }
+  
+    .text h1 {
+      font-size: 58px;
+    }
+  
+    .aiSection {
+      width: 90vw;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .aiPhoto {
+      width: 640px;
+      padding: 10px 0;
+
+    }
+  
+    .aiText {
+      width: 100%;
+      margin-left: 20px;
+      font-size: 34px;
+    }
+  
+    .catalog {
+      gap: 30px;
+      padding: 3vw 7vw;
+    }
+  
+    .catalogText {
+      font-size: 34px;
+    }
+    .catalogImage img {
+      height: 100%;
+    }
+  }
+  
+  

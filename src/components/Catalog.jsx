@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import styles from './Catalog.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Catalog = () => {
   const [meals, setMeals] = useState([]);
@@ -9,7 +10,10 @@ const Catalog = () => {
   const [favourites, setFavourites] = useState([]);
   const [search,setSearch]=useState("")
   const [searched,setSearched]=useState(false)
+  const [searchData,setSearchData]=useState([]);
+  const [error,setError]=useState('')
 
+  const hasMounted = useRef(false);
 
   useEffect(() => {
     const savedFavs = JSON.parse(localStorage.getItem('favourites'));
@@ -21,6 +25,7 @@ const Catalog = () => {
       localStorage.setItem('favourites', JSON.stringify(favourites));
     }
   }, [favourites]);
+
 
   const fetchRandomMeals = async (count = 10) => {
     try {
@@ -53,8 +58,16 @@ const Catalog = () => {
       console.error('Error fetching random meals:', error);
     } finally {
       setMoreLoading(false);
+
     }
   };
+
+  useEffect(() => {
+    if (!hasMounted.current) {
+      fetchRandomMeals();
+      hasMounted.current = true; 
+    }
+  }, []);
 
 
   const addMoreItems = () => {
@@ -69,40 +82,47 @@ const Catalog = () => {
     }
   };
 
-  useEffect(() => {
-    fetchRandomMeals();
-  }, []);
 
-  // const showSearch=()=>{
-  //   if(search.trim()!=""){
-  //     try {
-  //       setMoreLoading(true);
-  //       const mealPromises = Array.from({ length: count }, () =>
-  //         fetch('https://www.themealdb.com/api/json/v1/1/random.php').then(res => res.json())
-  //       );
-  
-  //       let mealResults = await Promise.all(mealPromises);
-  //       mealResults = mealResults.map(result => result.meals[0]);
-  //       setMeals(prevMeals => [...prevMeals, ...mealResults]);
-  //     } catch (error) {
-  //       console.error('Error fetching random meals:', error);
-  //     }
-  //   }else{
 
-  //   }
-  // }
+  const showSearch=async ()=>{
+    if(search.trim()!==""){
+      setSearched(true)
+      try {
+        setLoading(true);
+            const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
+            const data = await response.json();
+            setError("")
+            if(data.meals){
+              setSearchData(data.meals);
+            }else{
+              setSearchData([]);
+              setError("No meal founded")
+            }   
+      } catch (error) {
+        setError('Error fetching random meals:', error);
+
+      }finally{
+        setLoading(false)
+      }
+
+  }else{
+    setSearched(false);
+    setSearchData([]);
+  }
+}
 
   return (
     <div className={styles.catalog}>
       <h1>Random Meal Catalog</h1>
       <div className={styles.searchDiv}>
-        <input onChange={(e)=>setSearch(e.target.value)} type='text' placeholder='Looking for..'/>
-        <button onClick={showSearch}><img src='https://img.icons8.com/ios7/512/search.png'/></button>
-        {/* <button>{"->"}</button> */}
+        <input onChange={(e)=>setSearch(e.target.value)} value={search} type='text' placeholder='Looking for..'/>
+        <button onClick={showSearch}><img src='https://img.icons8.com/ios7/512/search.png' /></button>
       </div>
-      {loading ? (
+      {!searched?(
+      loading?(
         <div className={styles.spinner}></div>
       ) : (
+        <div>
         <div className={styles.mealGrid}>
           {meals.map(meal => (
             <MealCard
@@ -112,14 +132,31 @@ const Catalog = () => {
               toggleFavourite={toggleFavourite}
             />
           ))}
-        </div>
-      )}
+      </div>
       {moreLoading && <div className={styles.spinner}></div>}
-      {more && (
-        <button className={styles.moreBtn} onClick={addMoreItems}>
-          More...
-        </button>
-      )}
+            {more && (
+              <button className={styles.moreBtn} onClick={addMoreItems}>
+                More...
+              </button>
+            )}
+        </div>
+      )
+    ):(
+      loading?(
+        <div className={styles.spinner}></div>
+      ) :
+      <div className={styles.mealGrid}>
+        <p>{error}</p>
+      {searchData?.map(meal => (
+        <MealCard
+          key={meal.idMeal}
+          meal={meal}
+          isFavourite={favourites.some(fav => fav.idMeal === meal.idMeal)}
+          toggleFavourite={toggleFavourite}
+        />
+      ))}
+    </div>
+    )}
     </div>
   );
 };
@@ -127,8 +164,10 @@ const Catalog = () => {
 const MealCard = ({ meal, isFavourite, toggleFavourite }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
+  const navigate = useNavigate();
+
   const goDetailsPage = () => {
-    window.location.href = '/meals/' + meal.idMeal;
+    navigate(`/meals/${meal.idMeal}`)
   };
 
   return (
@@ -144,11 +183,7 @@ const MealCard = ({ meal, isFavourite, toggleFavourite }) => {
       <p>{meal.strCategory}</p>
       <div className={styles.buttons}>
         <button
-          style={{
-            backgroundColor: 'transparent',
-            border: 'none',
-            cursor: 'pointer',
-          }}
+          className={styles.favBtn}
           onClick={() => toggleFavourite(meal)}
         >
           <span

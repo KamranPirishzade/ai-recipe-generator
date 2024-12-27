@@ -13,13 +13,14 @@ export default function Ai() {
 
 
   async function run(prompt) {
-    setLoading(true);
-    setError(''); 
-    setOutput(''); 
+    if(prompt.trim()){
+      setLoading(true);
+      setError(''); 
+      setOutput(''); 
 
     try {
       const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
-      const result = await model.generateContent(prompt);
+      const result = await model.generateContent("This is a recipe generator. I can suggest recipes based on ingredients or meal names."+prompt);
       const response = await result.response;
       const text = await response.text();
       setOutput(text);
@@ -28,7 +29,7 @@ export default function Ai() {
       console.error('Error:', err);
     } finally {
       setLoading(false); 
-    }
+    }}
   }
 
   return (
@@ -43,7 +44,7 @@ export default function Ai() {
             className={styles.promptInput}
             placeholder="Enter ingredients to create a recipe..."
           />
-          <button onClick={() => run("This is a recipe generator. I can suggest recipes based on ingredients or meal names."+prompt)} className={styles.submitButton}>
+          <button onClick={() => run(prompt)} className={styles.submitButton}>
             Submit
           </button>
         </div>

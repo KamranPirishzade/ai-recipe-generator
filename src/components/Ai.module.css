@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 30px;
     flex-direction: column;
+    min-height: 55vh;
 }
 
 .ai h2{
@@ -53,7 +54,7 @@
 
 .promptInput{
     outline: none;
-    border-radius: 40px;
+    border-radius: 5  px;
     padding: 10px;
     white-space: normal;
 }

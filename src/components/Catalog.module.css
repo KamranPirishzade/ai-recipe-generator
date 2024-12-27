@@ -2,7 +2,8 @@
     text-align: center;
     padding: 20px;
     background-color: #f8f9fa;
-    padding-top: 60px;
+    padding-top: 100px;
+    min-height: 70vh;
   }
 
   .searchDiv{
@@ -41,7 +42,7 @@
   .mealGrid {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -55,10 +56,19 @@
     text-align: center;
     width: 15vw;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .mealCard:hover {
     transform: translateY(-5px);
+  }
+
+  .favBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
   
   .mealImage {
@@ -133,9 +143,109 @@
     background-color:#7a9f36 ;
     color: white;
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .moreBtn:hover{
     background-color: #e64a19;
   }
 
+  @media screen and (max-width:600px) and (min-width:320px) {
+    .catalog {
+      padding: 10px;
+      padding-top: 40px;
+    }
+  
+    .searchDiv{
+      width: 220px;
+      height: 30px;
+      padding: 8px 15px;
+    }
+  
+    .searchDiv img{
+      width: 30px;
+    }
+    .searchDiv input{
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    
+    .mealGrid {
+      padding: 20px;
+    }
+    
+    .mealCard {
+      padding: 10px;
+      min-width: 60vw;
+    }
+    .mealCard h3{
+      font-size: 20px;
+    }
+    .mealCard p{
+      font-size: 16px;
+    }
+    
+    .mealImage {
+      margin-bottom: 5px;
+    }
+    
+    .detailsButton {
+      font-size: 0.8rem;
+    }  
+    .moreBtn{
+      font-size: 16px;
+    }
+  }
+
+
+  @media screen and (max-width:991px) and (min-width:600px) {
+    .catalog {
+      padding: 10px;
+      padding-top: 40px;
+    }
+  
+    .searchDiv{
+      width: 270px;
+      height: 35px;
+      padding: 8px 10px;
+    }
+  
+    .searchDiv img{
+      width: 35px;
+    }
+    .searchDiv input{
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    
+    .mealGrid {
+      padding: 20px;
+    }
+    
+    .mealCard {
+      padding: 15px;
+      min-width: 30vw;
+    }
+    .mealCard h3{
+      font-size: 22px;
+    }
+    .mealCard p{
+      font-size: 17px;
+    }
+    
+    .mealImage {
+      margin-bottom: 5px;
+    }
+    
+    .detailsButton {
+      font-size: 0.9rem;
+    }  
+    .moreBtn{
+      font-size: 18px;
+    }
+  }

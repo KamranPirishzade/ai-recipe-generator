@@ -25,7 +25,7 @@ export default function About() {
         <h2>Meet the Team</h2>
         <div className={styles.teamMembers}>
         <div className={styles.member}>
-            <img src="https://imageio.forbes.com/specials-images/imageserve/62d599ede3ff49f348f9b9b4/0x0.jpg?format=jpg&crop=821,821,x155,y340,safe&height=416&width=416&fit=bounds" alt="Team Member 1"/>
+            <img src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/media-assets/image/20240817_dap319.jpg" alt="Team Member 1"/>
             <h3>John Doe</h3>
             <p>Founder & Head Chef</p>
         </div>
@@ -57,7 +57,6 @@ export default function About() {
     <section className={styles.cta}>
         <h2>Join Our Community</h2>
         <p>Be part of a thriving community of food enthusiasts. Share your recipes, learn from others, and take your cooking to the next level.</p>
-        <button>Sign Up Now</button>
     </section>
     </div>
     </div>

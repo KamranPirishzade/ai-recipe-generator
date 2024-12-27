@@ -1,8 +1,9 @@
 
 .list{
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 40px;
     text-align: center;
+    min-height: 80vh;
 }
 
 
@@ -41,11 +42,32 @@
 }
 
 
+.searchDiv{
+    display: flex;
+    padding: 8px 15px;
+    border-radius: 30px;
+    width: 25vw;
+    border: 2px solid black;
+    margin: 20px auto;
+}
 
 
+.search{
+    border:none;
+    font-size: 16px;
+}
 
+.search:focus{
+    outline: none;
+}
 
-.detailsButton {
+.searchDiv img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.detailsButton,.removeButton {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
@@ -61,3 +83,142 @@
   .detailsButton:hover {
     background-color:#333528 ;
   }
+  .removeButton:hover{
+    background-color: rgb(187, 15, 15);
+  }
+
+
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+  }
+
+
+@media screen and (max-width:600px) and (min-width:320px) {
+      
+.list{
+  margin: 10px auto;
+  padding: 40px 15px;
+  text-align: center;
+  min-height: 90vh;
+}
+.listItems h3{
+  font-size: 16px;
+}
+.listItems p{
+  font-size: 12px;
+}
+
+.listItems{
+  gap: 10px;
+}
+
+.listItem{
+  width: 70vw;
+  padding-bottom: 5px
+}
+
+.mealText{
+  padding: 5px;
+}
+
+.searchDiv{
+  padding: 8px 15px;
+  border-radius: 30px;
+  width: 70vw;
+  margin: 20px auto;
+}
+
+.search{
+  font-size: 14px;
+}
+
+.searchDiv img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.detailsButton,.removeButton {
+  margin-top: 5px;
+  padding: 8px 15px;
+  font-size: 0.4rem;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+  }
+
+
+@media screen and (max-width:991px) and (min-width:601px) {  
+    .list{
+      margin: 10px auto;
+      padding: 40px 15px;
+      text-align: center;
+      min-height: 90vh;
+    }
+    .listItems h3{
+      font-size: 19px;
+    }
+    .listItems p{
+      font-size: 17px;
+    }
+    
+    .listItems{
+      gap: 10px;
+    }
+    
+    .listItem{
+      width: 40vw;
+    }
+    
+    .mealText{
+      padding: 10px;
+    }
+    
+    .searchDiv{
+      padding: 8px 15px;
+      border-radius: 30px;
+      width: 60vw;
+      margin: 20px auto;
+    }
+    
+    .search{
+      font-size: 16px;
+    }
+    
+    
+    .detailsButton,.removeButton {
+      margin-top: 5px;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+    
+    .buttons{
+      display: flex;
+      justify-content: center;
+    }
+}
