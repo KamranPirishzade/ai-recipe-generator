@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ai-recipe-generator/static/css/main.fe71af5a.css",
-    "main.js": "/ai-recipe-generator/static/js/main.d630641b.js",
+    "main.css": "/ai-recipe-generator/static/css/main.aaf19d5a.css",
+    "main.js": "/ai-recipe-generator/static/js/main.770cdd2c.js",
     "index.html": "/ai-recipe-generator/index.html",
-    "main.fe71af5a.css.map": "/ai-recipe-generator/static/css/main.fe71af5a.css.map",
-    "main.d630641b.js.map": "/ai-recipe-generator/static/js/main.d630641b.js.map"
+    "main.aaf19d5a.css.map": "/ai-recipe-generator/static/css/main.aaf19d5a.css.map",
+    "main.770cdd2c.js.map": "/ai-recipe-generator/static/js/main.770cdd2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe71af5a.css",
-    "static/js/main.d630641b.js"
+    "static/css/main.aaf19d5a.css",
+    "static/js/main.770cdd2c.js"
   ]
 }
