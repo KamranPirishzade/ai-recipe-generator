@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ai-recipe-generator/static/css/main.030bf9bc.css",
+    "main.js": "/ai-recipe-generator/static/js/main.2d6e3afd.js",
+    "index.html": "/ai-recipe-generator/index.html",
+    "main.030bf9bc.css.map": "/ai-recipe-generator/static/css/main.030bf9bc.css.map",
+    "main.2d6e3afd.js.map": "/ai-recipe-generator/static/js/main.2d6e3afd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.030bf9bc.css",
+    "static/js/main.2d6e3afd.js"
+  ]
+}
