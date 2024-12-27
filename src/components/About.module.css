@@ -83,7 +83,7 @@
   }
   
   
-  @media screen and (max-width:600px) and (min-width:320px) {
+  @media screen and (max-width:600px) and (min-width:300px) {
     .aboutContainer {
       line-height: 1.4;
       padding: 20px;

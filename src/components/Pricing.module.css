@@ -104,7 +104,7 @@
 
 
 
-@media screen and (max-width:600px) and (min-width:320px) {
+@media screen and (max-width:600px) and (min-width:300px) {
     .pricingContainer {
         padding: 20px;
         text-align: center;
@@ -120,7 +120,7 @@
         justify-content: center;
         gap: 5px;
         padding: 18px 0;
-        width: 70vw;
+        width: 80vw;
     }
     
     .pricingCard ul li {

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import styles from './Pricing.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Pricing() {
   const [promo, setPromo] = useState('');
   const [discount, setDiscount] = useState(null);
   const [res,setRess]=useState("")
-
-
+  const navigate=useNavigate();
   const links={
     discountMed:"https://buy.stripe.com/test_00g8xmaW86qTgN25km",
     discountPre:"https://buy.stripe.com/test_8wMeVK5BO02vcwMeUX"
@@ -58,7 +58,7 @@ export default function Pricing() {
             <li>Feature 2: Basic Support</li>
             <li>Feature 3: 100 API Calls</li>
           </ul>
-          <button><a href='/'>Get Started</a></button>
+          <button onClick={()=>navigate("/")}>Get Started</button>
         </div>
 
         <div className={styles.pricingCard}>
