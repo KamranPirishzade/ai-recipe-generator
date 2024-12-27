@@ -37,9 +37,9 @@ export default function Footer() {
             <div  className={`${styles.footerObject} ${styles.footerObject3}`}>
                 <h3>Main Pages</h3>
                 <ul className={styles.pages}>  
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/meals">Meals</Link></li>
-                <li><Link to="/ai-recipe-maker">AI Recipe</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/meals">Meals</Link></li>
+                    <li><Link to="/ai-recipe-maker">AI Recipe</Link></li>
                 </ul>
             </div>
             <div  className={styles.footerObject}>
