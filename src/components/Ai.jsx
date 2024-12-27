@@ -7,8 +7,7 @@ export default function Ai() {
   const [output, setOutput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  
-  const apiKey = 'AIzaSyA7h4X61irCC6c7N704XFmdxA1S5AgNOIQ';
+  const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
   const genAI = new GoogleGenerativeAI(apiKey);
 
 
