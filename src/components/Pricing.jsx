@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import styles from './Pricing.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../AuthContext';
+
 
 export default function Pricing() {
   const [promo, setPromo] = useState('');
   const [discount, setDiscount] = useState(null);
   const [res,setRess]=useState("")
+  const { isLoggedIn, logout } = useAuth();
   const navigate=useNavigate();
   const links={
     discountMed:"https://buy.stripe.com/test_00g8xmaW86qTgN25km",
@@ -80,7 +83,7 @@ export default function Pricing() {
             <li>Feature 3: Recipe Modifications</li>
             <li>Feature 4: No Ads</li>
           </ul>
-          <button><a href={discount?links.discountMed:'https://buy.stripe.com/test_fZe9Bq7JWeXpdAQcMN'} target="_blank"  rel="noreferrer">Subscribe Now</a></button>
+          <button><a href={isLoggedIn?(discount?links.discountMed:'https://buy.stripe.com/test_fZe9Bq7JWeXpdAQcMN'):"/login"} target={isLoggedIn?"_blank":""}  rel="noreferrer">Subscribe Now</a></button>
         </div>
 
         <div className={styles.pricingCard}>
@@ -102,7 +105,7 @@ export default function Pricing() {
             <li>Feature 4: Image Generator (Beta)</li>
             <li>Feature 5: Early Feature Access</li>
           </ul>
-          <button><a href={discount?links.discountPre:'https://buy.stripe.com/test_8wMcNCe8k4iLfIY9AA'} target="_blank"  rel="noreferrer">Subscribe Now</a></button>
+          <button><a href={isLoggedIn?(discount?links.discountPre:'https://buy.stripe.com/test_8wMcNCe8k4iLfIY9AA'):`/login`} target={isLoggedIn?"_blank":""}  rel="noreferrer">Subscribe Now</a></button>
         </div>
       </div>
     </div>

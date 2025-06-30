@@ -1,0 +1,20 @@
+
+.signUpForm{
+    padding: 8vw;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.signUpForm input{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 16px;
+}
+
+.signUpBtn{
+    padding: 14px;
+    background-color: #333528;
+    color: white;
+}

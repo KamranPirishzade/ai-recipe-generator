@@ -19,11 +19,10 @@ export default function Footer() {
         <div className={styles.footerContainer}>
             <div className={styles.footerObject}>
                 <h2 className={styles.logoName}>Muse Ai Recipe</h2>
-                {/* <img src="https://livedemo00.template-help.com/wordpress_47529/wp-content/uploads/2011/07/logo-mini.png" alt="logo.png" /> */}
                 <div className={styles.icons}>
-                  <a href='https://www.instagram.com/'><FaFacebook size={30}/></a>
-                  <a href='https://www.facebook.com/'><FaInstagram size={30}/></a>
-                  <a href='https://x.com/'><FaXTwitter size={30}/></a>
+                  <a href='https://www.facebook.com/' target='_blank'><FaFacebook size={30}/></a>
+                  <a href='https://www.instagram.com/' target='_blank'><FaInstagram size={30}/></a>
+                  <a href='https://x.com/' target='_blank'><FaXTwitter size={30}/></a>
                 </div>
             </div>
             <div  className={`${styles.footerObject} ${styles.footerObject2}`}>
@@ -56,7 +55,7 @@ export default function Footer() {
             </div>
         </div>
         <hr></hr>
-        <p className={styles.copyright}>&copy; 2024 Muse. All rights reserved.</p>
+        <p className={styles.copyright}>&copy; {new Date().getFullYear()} Muse. All rights reserved.</p>
     </div>
     </footer>
   )

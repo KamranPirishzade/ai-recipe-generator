@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "./About.module.css"
 
+
+
 export default function About() {
   return (
         <div>
@@ -25,17 +27,17 @@ export default function About() {
         <h2>Meet the Team</h2>
         <div className={styles.teamMembers}>
         <div className={styles.member}>
-            <img src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/media-assets/image/20240817_dap319.jpg" alt="Team Member 1"/>
+            <img src={`${process.env.PUBLIC_URL}/imgs/about/kojima.png`} alt="Team Member 1"/>
             <h3>John Doe</h3>
             <p>Founder & Head Chef</p>
         </div>
         <div className={styles.member}>
-            <img src="https://hips.hearstapps.com/hmg-prod/images/apple-ceo-steve-jobs-speaks-during-an-apple-special-event-news-photo-1683661736.jpg?crop=0.800xw:0.563xh;0.0657xw,0.0147xh&resize=1200:*" alt="Team Member 2"/>
+            <img src={`${process.env.PUBLIC_URL}/imgs/about/steve.avif`} alt="Team Member 2"/>
             <h3>Jane Smith</h3>
             <p>Recipe Developer</p>
         </div>
         <div className={styles.member}>
-            <img src="https://assetsio.gnwcdn.com/kojima_Zhtk9WV.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webps" alt="Team Member 3"/>
+            <img src={`${process.env.PUBLIC_URL}/imgs/about/bill.avif`} alt="Team Member 3"/>
             <h3>Emily Brown</h3>
             <p>Community Manager</p>
         </div>

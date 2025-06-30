@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kamranpirishzade.github.io/ai-recipe-generator/",
+  "homepage": "https://kamranpirishzade.github.io/",
   "name": "final",
   "version": "0.1.0",
   "private": true,
@@ -15,9 +15,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "firebase": "^11.7.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "react-markdown": "^10.1.0",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
     "react-simply-carousel": "^9.1.7",

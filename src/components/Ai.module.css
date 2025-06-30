@@ -13,6 +13,11 @@
     min-height: 55vh;
 }
 
+.language-markdown,.code{
+  width: 100%;
+}
+
+
 .ai h2{
     font-size: 32px;
     color: #333;

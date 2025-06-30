@@ -1,0 +1,20 @@
+
+.loginForm{
+    padding: 8vw;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.loginForm input{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 16px;
+}
+
+.loginBtn{
+    padding: 14px;
+    background-color: #333528;
+    color: white;
+}

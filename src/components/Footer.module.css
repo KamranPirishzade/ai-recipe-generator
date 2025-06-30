@@ -1,4 +1,4 @@
-.footer{
+.footer {
     padding: 20px 50px;
     background-color: #333528;
     color: white;
@@ -7,37 +7,36 @@
     box-sizing: border-box;
 }
 
-.footerContainer{
+.footerContainer {
     display: flex;
     justify-content: space-between;
 }
 
-.footerContainer ul{
+.footerContainer ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
-.footerContainer ul li{
+.footerContainer ul li {
     margin: 0;
     line-height: 1.5;
 }
 
-.footerObject{
+.footerObject {
     width: 21vw;
     padding: 20px;
-    /* letter-spacing: 0.2cap; */
-    /* line-height: 1.3; */
+
 
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 25px;
 }
 
-.icons a{
+.icons a {
     background-color: white;
     padding: 2px;
     border-radius: 100%;
@@ -52,12 +51,12 @@
     transition: background-color 0.3s ease;
 }
 
-.icons a:hover{
+.icons a:hover {
     background-color: rgb(122, 159, 54);
     color: white;
 }
 
-.submitForm{
+.submitForm {
     background-color: white;
     padding: 5px 15px;
     border-radius: 10px;
@@ -66,7 +65,7 @@
     justify-content: space-between;
 }
 
-.submitForm input{
+.submitForm input {
     border: none;
     font-size: 18px;
     background-color: transparent;
@@ -74,40 +73,42 @@
     width: 100%;
 }
 
-.submitForm input:focus{
+.submitForm input:focus {
     outline: none;
 }
 
-.submitForm button{
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+.submitForm button {
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
     background-color: transparent;
     color: rgb(92, 161, 201);
     transition: color 0.2s ease;
 }
 
-.submitForm button:hover{
+.submitForm button:hover {
     color: #333528;
 }
 
-.pages a{
+.pages a {
     color: white;
     transition: color 0.3s ease;
 }
-.pages a:hover{
-    color: rgb(122, 159, 54); ;
+
+.pages a:hover {
+    color: rgb(122, 159, 54);
+    ;
 }
 
-.copyright{
+.copyright {
     text-align: right;
     margin-right: 20px;
 }
 
-.logoName{
-    font-family: "Playwrite IT Moderna", serif;     
+.logoName {
+    font-family: "Playwrite IT Moderna", serif;
 }
 
 
@@ -127,12 +128,14 @@
     .footerObject {
         width: 100%;
         text-align: center;
-        padding:10px 0;
+        padding: 10px 0;
     }
-    .icons{
+
+    .icons {
         margin: 0 auto;
         justify-content: center;
     }
+
     .icons a {
         width: 35px;
         height: 35px;
@@ -146,10 +149,12 @@
         margin-right: 0;
         text-align: center;
     }
-    .footerObject2{
+
+    .footerObject2 {
         width: 40%;
     }
-    .footerObject3{
+
+    .footerObject3 {
         width: 40%;
     }
 }
@@ -161,12 +166,12 @@
         padding: 20px 40px;
     }
 
-    .footerContainer{
+    .footerContainer {
         flex-wrap: wrap;
         align-items: center;
     }
 
-    .footerObject{
+    .footerObject {
         width: 40%;
         text-align: left;
     }

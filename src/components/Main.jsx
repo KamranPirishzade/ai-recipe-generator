@@ -34,7 +34,7 @@ function Main() {
                  <p>Unleash your inner chef with personalized recipes, powered by AI. From quick meals to gourmet dishes, we turn your ingredients into magic.</p>
              </div>
              <div className={styles.mainPhoto}>
-             <img  src='https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='main.png'/>
+             <img  src={`${process.env.PUBLIC_URL}/imgs/main/carusel.avif`} alt='main1.png'/>
              </div>
          </div>
          <div className={styles.mainDiv}>
@@ -43,7 +43,7 @@ function Main() {
             <p>Embark on a culinary journey with recipes tailored to your taste. Whether you're hosting a dinner or craving comfort food, we've got you covered.</p>
             </div>
             <div className={styles.mainPhoto}>
-            <img  src='https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='main.png'/>
+            <img  src={`${process.env.PUBLIC_URL}/imgs/main/carusel-2.avif`} alt='main2.png'/>
             </div>
         </div>
         </ReactSimplyCarousel>
@@ -59,13 +59,13 @@ function Main() {
           Try AI Recipe Maker
         </button>
         </div>
-          <img className={styles.aiPhoto} src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ai_recipe.png" />
+          <img className={styles.aiPhoto} src={`${process.env.PUBLIC_URL}/imgs/main/ai-recipe.avif`} alt="ai_recipe.png" />
 
 
       </div>
       <div className={styles.catalog}>
         <div className={styles.catalogImage}>
-          <img src='https://th-thumbnailer.cdn-si-edu.com/nhEMcXmHIiMWBfKMirhyVp2kOIM=/fit-in/1600x0/filters:focal(800x602:801x603)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2d/20/2d209ecc-c4cf-40dc-85c2-45ec0c84c402/food-booklist-v1.jpg' alt='catalog.jpg'/>
+          <img src={`${process.env.PUBLIC_URL}/imgs/main/explore-catalog.webp`} alt='catalog.jpg'/>
         </div>
       <div className={styles.catalogText}>
           <h2>Explore Our Catalog</h2>

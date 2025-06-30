@@ -26,10 +26,11 @@ nav {
 }
 
 .logoImg {
-  height: 260px;
-  width: 220px;
+  height: auto;
+  width: auto;
   margin: 40px 10px 0;
   pointer-events: none;
+  
 }
 
 nav ul {
